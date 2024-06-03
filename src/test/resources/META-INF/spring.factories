@@ -1,0 +1,4 @@
+org.springframework.test.context.ContextCustomizerFactory = com.huseyinbabal.\
+    jdemo.config.SqlTestContainersSpringContextCustomizerFactory,com.\
+    huseyinbabal.jdemo.config.TestContainersSpringContextCustomizerFactory,com.\
+    huseyinbabal.jdemo.config.RedisTestContainersSpringContextCustomizerFactory
