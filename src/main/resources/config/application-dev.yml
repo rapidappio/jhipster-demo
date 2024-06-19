@@ -37,14 +37,15 @@ spring:
       indent-output: true
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
-    url: jdbc:postgresql://localhost:5432/jDemo
-    username: jDemo
-    password:
+    url: jdbc:postgresql://<host>:<port>/<db>?sslmode=require&application_name=rapidapp_jhipster
+    username: <user>
+    password: <pass>
     hikari:
       poolName: Hikari
       auto-commit: false
+    driver-class-name: org.postgresql.Driver
   elasticsearch:
-    uris: http://localhost:9200
+    uris: https://elastic:<password>@<host>:<port>
   liquibase:
     # Remove 'faker' if you do not want the sample data to be loaded automatically
     contexts: dev, faker
@@ -71,7 +72,7 @@ jhipster:
   cache: # Cache configuration
     redis: # Redis configuration
       expiration: 3600 # By default objects stay 1 hour (in seconds) in the cache
-      server: redis://localhost:6379
+      server: rediss://default:AcR1AAIncDFmYWZlMzBmNTM5YWM0ZWY4OTM3MDJlMjViMjhlYWQ5YnAxNTAyOTM@willing-mallard-50293.upstash.io:6379
       cluster: false
       # server: redis://localhost:6379,redis://localhost:16379,redis://localhost:26379
       # cluster: true

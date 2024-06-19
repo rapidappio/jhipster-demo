@@ -83,6 +83,7 @@ public class CacheConfiguration {
             createCache(cm, com.huseyinbabal.jdemo.domain.User.class.getName(), jcacheConfiguration);
             createCache(cm, com.huseyinbabal.jdemo.domain.Authority.class.getName(), jcacheConfiguration);
             createCache(cm, com.huseyinbabal.jdemo.domain.User.class.getName() + ".authorities", jcacheConfiguration);
+            createCache(cm, com.huseyinbabal.jdemo.domain.Product.class.getName(), jcacheConfiguration);
             // jhipster-needle-redis-add-entry
         };
     }
